@@ -1,0 +1,56 @@
+
+/*=======================
+====== BODY ============*/
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background: #111;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+/*=======================
+====== header/topBAR ============*/
+  header {
+    background: #222;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+/*=======================
+====== elements ============*/
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 90%;
+    margin-top: 20px;
+  }
+  .tile {
+    background: #333;
+    border-radius: 10px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .tile:hover {
+    background: #555;
+  }
+  #viewer {
+    margin-top: 20px;
+  }
+
+/*=======================
+====== media ============*/
+  video, img {
+    max-width: 600px;
+    max-height: 400px;
+    border-radius: 10px;
+  }
